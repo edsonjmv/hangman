@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hangman</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="application.js"></script>
+</head>
+
+<body>
+
+  <div id="main">
+
+  <button id="new-game">
+    New game
+  </button>
+
+  <div id="hangman">
+    <div class="right-bar"></div>
+    <div class="top-bar"></div>
+    <div class="left-bar"></div>
+    <div class="base"></div>
+
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="left-arm"></div>
+    <div class="right-arm"></div>
+    <div class="left-leg"></div>
+    <div class="right-leg"></div>
+
+    <div class="clearfix"></div>
+  </div>
+
+  <div id="currentWord">
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+    <span>_</span>
+  </div>
+
+  <div id="game" class="hide">
+    <div id="currentWord"></div>
+  </div>
+
+  <section class="wrong">Wrong letters: </section>
+
+  <div id="letters">
+    <span></span>
+  </div>
+
+  <div id="you-win" class="hide">
+    <p>Good job, you saved our man!</p>
+  </div>
+
+  <div id="game-over" class="hide">
+    <p>Game over!</p>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
